@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+#menu-container{ /* logo and menu */
+    background-color:white;
+    max-height: 120px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+    position: fixed; /* Set navbar to fixed while scrolling */
+    z-index: 2; /* Specify the order of how elements are stacked on top of one another. */
+    box-shadow: 0px 1px 30px rgb(0, 0, 0, 0.1);
+}
+
+/*  Page header */
+#header-img{
+    float: left;
+    max-width: 200px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 27px;
+}
+
+#nav-bar{
+    margin-top: 30px;
+}
+
+#nav-bar a{
+    padding: 30px 40px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar li{
+    font-size: 16px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+#nav-bar ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+#video{
+    padding-bottom: 20px;
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* Page body*/
+
+/* Form start */
+#form{
+    position: relative;
+    bottom: 30px;
+    padding: 50px;
+    background-color: rgb(240, 227, 219);
+}
+
+#email-label{
+    font-weight: 400;
+    line-height: 0.2;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    font-size: 20px;
+}
+
+#email, #submit{
+    margin: auto; /* Set margin to auto will center the form */
+    width: 30%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 10px 10px 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#submit{
+    color:white;
+    background-color:rgb(202, 127, 41);
+}
+
+.form-content {
+    display: flex;
+    flex-flow: column;
+    padding: 7px; /* Set space between elements */
+}
+/* Form End */
+
+/* Features */
+
+#features-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 10px;
+    color: #2a2933;
+}
+
+#features{
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.icon {
+    line-height: 2;
+    float: left;
+    font-size: 45px;
+    color: #332d29;
+}
+
+.feature-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.feature-text h2{
+    font-weight: 400;
+}
+
+.feature-text p{
+    font-weight: 300;
+}
+
+#features-container{
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 90px;
+}
+
+/* Features End */
+/* Pricing Start */
+
+#pricing-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #332d29;
+}
+
+#pricing-subtitle{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#pricing{
+    background-color: #cca68f;
+    padding: 50px;
+}
+
+#pricing-container{
+    margin: auto;
+    max-width: 900px;
+    padding: 40px 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#first-card, #second-card{
+    margin: auto;
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.card-text{
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-text p{
+    font-size: 12px;
+}
+
+.card-submmit{
+    color:white;
+    background-color:rgb(202, 127, 41);
+    max-width: 500px;
+    min-width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Pricing End */
+
+/* Responsive */
+
+@media screen and (max-width: 820px){
+   .icon{
+       text-align: center;
+       float: none;
+       position: relative;
+       line-height: 0;
+       vertical-align: middle;
+       top: 20px;
+   }
+   
+   .feature-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    #header-img{
+        float: none;
+        margin: auto;
+        display: flex;
+        margin-top: 26px; 
+    }
+
+     #nav-bar ul{
+         display: flex;
+         justify-content: center;
+         margin-right: 50px;
+     }
+ 
+     #nav-bar{
+         margin-top: 25px;
+     }
+     
+     #nav-bar a{
+         padding: 30px;
+     }
+     #email-label{
+        line-height: 1.2;
+    
+    }
+ }
+
+@media screen and (max-width: 1120px){
+     #video{
+         height: 70vw;
+
+     }
+ 
+ }
+
+ @media screen and (max-width: 900px){
+     #pricing-container{
+         flex-direction: column;
+         row-gap: 40px;
+         padding: 40px 90px;
+    }
